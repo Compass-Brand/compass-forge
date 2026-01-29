@@ -1,0 +1,9 @@
+[submodule "forge-rag"]
+	path = forge-rag
+	url = https://github.com/Compass-Brand/forge-rag.git
+[submodule "forge-providers"]
+	path = forge-providers
+	url = https://github.com/Compass-Brand/forge-providers.git
+[submodule "bmad-engine"]
+	path = bmad-engine
+	url = https://github.com/Compass-Brand/bmad-engine.git
