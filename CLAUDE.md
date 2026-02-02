@@ -32,6 +32,30 @@ This file provides guidance to Claude Code when working in this repository.
 
 ---
 
+## Component Architecture
+
+### forge-rag (Custom RAG System)
+- **Architecture:** Ant Colony V2 - distributed retrieval with swarm intelligence
+- **Features:** Document ingestion, semantic chunking, hybrid search (BM25 + vector)
+- **Storage:** PostgreSQL with pgvector, Memgraph for knowledge graphs
+- **API:** FastAPI endpoints for ingestion, query, and management
+
+### forge-providers (Multi-Provider LLM Abstraction)
+- **Purpose:** Unified interface for multiple LLM providers
+- **Supported Providers:** OpenAI, Anthropic, Azure OpenAI, local models (Ollama)
+- **Features:** Provider failover, cost tracking, rate limiting, response caching
+- **Configuration:** Environment-based provider selection with fallback chains
+
+---
+
+## Standards & Guidelines
+
+This project follows Compass Brand standards:
+- **Tech Stack:** See [Universal Tech Stack](../docs/technical_information/tech_stack.md)
+- **Brand Guidelines:** See [Brand Guidelines](../docs/brand/brand-guidelines.md)
+
+---
+
 ## Development Methodology: TDD
 
 All functional code MUST follow Test-Driven Development.
