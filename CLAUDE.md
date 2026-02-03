@@ -16,7 +16,7 @@ This file provides guidance to Claude Code when working in this repository.
 | ------------------ | --------------------------------------------------------- |
 | `forge-rag/`       | Custom RAG system with Ant Colony V2 architecture         |
 | `forge-providers/` | Multi-provider LLM abstraction (OpenAI, Anthropic, local) |
-| `compass-engine/`     | BMAD methodology automation engine                        |
+| `compass-engine/`     | Central development tools (BMAD, Claude Code config, workflow scripts) |
 
 ---
 
