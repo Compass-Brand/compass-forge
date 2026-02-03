@@ -12,7 +12,7 @@ Compass Forge is the AI development platform powering Compass Brand's intelligen
 | ------------------------------------ | ---------------------------------------------- |
 | [forge-rag](./forge-rag)             | Custom RAG system (Ant Colony V2 architecture) |
 | [forge-providers](./forge-providers) | Multi-provider LLM abstraction layer           |
-| [bmad-engine](./bmad-engine)         | BMAD methodology engine                        |
+| [compass-engine](./compass-engine)         | Central development tools (BMAD, Claude Code config, workflow scripts)                        |
 
 ## Quick Start
 
