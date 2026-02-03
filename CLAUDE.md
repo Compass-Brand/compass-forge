@@ -51,7 +51,7 @@ This file provides guidance to Claude Code when working in this repository.
 ## Standards & Guidelines
 
 This project follows Compass Brand standards:
-- **Tech Stack:** See [Universal Tech Stack](../docs/technical_information/tech_stack.md)
+- **Tech Stack:** See [Universal Tech Stack](../docs/technical-information/tech-stack.md)
 - **Brand Guidelines:** See [Brand Guidelines](../docs/brand/brand-guidelines.md)
 
 ---

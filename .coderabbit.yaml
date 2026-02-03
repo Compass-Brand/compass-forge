@@ -30,8 +30,6 @@ reviews:
   tools:
     ruff:
       enabled: true
-    eslint:
-      enabled: true
     shellcheck:
       enabled: true
     gitleaks:
