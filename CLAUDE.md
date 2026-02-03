@@ -12,35 +12,37 @@ This file provides guidance to Claude Code when working in this repository.
 
 ## Components
 
-| Component | Purpose |
-|-----------|---------|
-| `forge-rag/` | Custom RAG system with Ant Colony V2 architecture |
+| Component          | Purpose                                                   |
+| ------------------ | --------------------------------------------------------- |
+| `forge-rag/`       | Custom RAG system with Ant Colony V2 architecture         |
 | `forge-providers/` | Multi-provider LLM abstraction (OpenAI, Anthropic, local) |
-| `bmad-engine/` | BMAD methodology automation engine |
+| `bmad-engine/`     | BMAD methodology automation engine                        |
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|------------|
-| Language | Python 3.11+ |
-| Framework | FastAPI |
-| Database | PostgreSQL + Memgraph |
-| Embeddings | OpenAI / Local models |
-| Observability | Langfuse |
+| Layer         | Technology            |
+| ------------- | --------------------- |
+| Language      | Python 3.11+          |
+| Framework     | FastAPI               |
+| Database      | PostgreSQL + Memgraph |
+| Embeddings    | OpenAI / Local models |
+| Observability | Langfuse              |
 
 ---
 
 ## Component Architecture
 
 ### forge-rag (Custom RAG System)
+
 - **Architecture:** Ant Colony V2 - distributed retrieval with swarm intelligence
 - **Features:** Document ingestion, semantic chunking, hybrid search (BM25 + vector)
 - **Storage:** PostgreSQL with pgvector, Memgraph for knowledge graphs
 - **API:** FastAPI endpoints for ingestion, query, and management
 
 ### forge-providers (Multi-Provider LLM Abstraction)
+
 - **Purpose:** Unified interface for multiple LLM providers
 - **Supported Providers:** OpenAI, Anthropic, Azure OpenAI, local models (Ollama)
 - **Features:** Provider failover, cost tracking, rate limiting, response caching
@@ -51,8 +53,9 @@ This file provides guidance to Claude Code when working in this repository.
 ## Standards & Guidelines
 
 This project follows Compass Brand standards:
-- **Tech Stack:** See [Universal Tech Stack](../docs/technical-information/tech-stack.md)
-- **Brand Guidelines:** See [Brand Guidelines](../docs/brand/brand-guidelines.md)
+
+- **Tech Stack:** See [Universal Tech Stack](https://github.com/Compass-Brand/compass-brand/blob/main/docs/technical-information/tech_stack.md)
+- **Brand Guidelines:** See [Brand Guidelines](https://github.com/Compass-Brand/compass-brand/blob/main/docs/brand/brand-guidelines.md)
 
 ---
 
