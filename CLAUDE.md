@@ -54,6 +54,7 @@ This file provides guidance to Claude Code when working in this repository.
 
 This project follows Compass Brand standards:
 
+- **Rules:** Inherited from parent [compass-brand/.claude/rules/](https://github.com/Compass-Brand/compass-brand/tree/main/.claude/rules) - coding style, security, testing, git workflow, performance, and agent delegation rules
 - **Tech Stack:** See [Universal Tech Stack](https://github.com/Compass-Brand/compass-brand/blob/main/docs/technical-information/tech_stack.md)
 - **Brand Guidelines:** See [Brand Guidelines](https://github.com/Compass-Brand/compass-brand/blob/main/docs/brand/brand-guidelines.md)
 
