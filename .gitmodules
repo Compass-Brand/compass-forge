@@ -7,3 +7,6 @@
 [submodule "compass-engine"]
 	path = compass-engine
 	url = https://github.com/Compass-Brand/compass-engine.git
+[submodule "constellation"]
+	path = constellation
+	url = https://github.com/Compass-Brand/constellation.git
