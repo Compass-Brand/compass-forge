@@ -17,3 +17,4 @@ updates:
       - "submodule"
     allow:
       - dependency-name: "compass-engine"
+      - dependency-name: "constellation"
