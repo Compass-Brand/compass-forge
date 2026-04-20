@@ -1,20 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
+      interval: 'weekly'
     labels:
-      - "dependencies"
-      - "github-actions"
-
-  - package-ecosystem: "gitsubmodule"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    labels:
-      - "dependencies"
-      - "submodule"
-    allow:
-      - dependency-name: "compass-engine"
-      - dependency-name: "constellation"
+      - 'dependencies'
+      - 'github-actions'
