@@ -1,43 +1,50 @@
 # Planning
 
-This folder contains planning artifacts for this repository following the Compass Brand unified planning structure.
+This folder is the live BMAD planning surface for `compass-forge`.
+
+The old backlog, sprint, epic, and spike layout is being retired. The active planning model now uses:
+
+- `planning/roadmap/`
+- `planning/current/`
+- `planning/previous/`
+- `planning/lessons/`
+
+Because `compass-forge` orchestrates child repos, it also maintains:
+
+- `planning/repositories.yaml`
+- `planning/current/initiative-index.yaml`
+- `planning/current/initiatives/`
 
 ## Structure
 
-```
+```text
 planning/
-├── backlog/              # Product backlog and refinement notes
-│   ├── product-backlog.yaml
-│   └── refinement-notes/
-├── sprints/              # Sprint artifacts
-│   ├── current/          # Active sprint
-│   ├── archive/          # Completed sprints
-│   └── templates/        # Sprint templates
-├── epics/                # Epic definitions
-│   └── templates/        # Epic and story templates
-│       └── tests/        # TDD test templates
-├── decisions/            # Local ADRs
-│   └── templates/
-└── spikes/               # Technical investigations
+├── README.md
+├── repositories.yaml
+├── roadmap/
+├── current/
+│   ├── phase.md
+│   ├── phase-state.yaml
+│   ├── initiative-index.yaml
+│   └── initiatives/
+├── previous/
+├── lessons/
+└── decisions/
 ```
 
-## TDD Enforcement
+## Operating Model
 
-Before starting development on any epic:
+- `compass-forge` owns domain-level roadmap and initiative routing for its child repos.
+- Repo-local delivery work still happens in the authoritative child repo root, such as `compass-engine`, `forge-rag`, or `forge-providers`.
+- `roadmap.yaml` is authoritative over `roadmap.md`.
+- `phase-state.yaml` is authoritative over `phase.md`.
+- `initiative-index.yaml` is authoritative for concurrent initiative routing and overlap gates.
 
-1. Create test plan at `planning/epics/{epic}/tests/test-plan.md`
-2. Write acceptance tests at `planning/epics/{epic}/tests/acceptance-tests.md`
-3. Follow RED-GREEN-REFACTOR cycle
+## Legacy Content
 
-## Templates
-
-- **product-backlog.yaml** - Prioritized backlog with TDD gates
-- **sprint-goal-template.md** - Sprint objectives
-- **epic-template.md** - Epic definition with DoD
-- **story-template.md** - Story with TDD checklist
-- **adr-template.md** - Architecture Decision Record
+Older `planning/backlog/`, `planning/sprints/`, `planning/epics/`, and `planning/spikes/` lanes may remain temporarily during migration, but they are no longer the active standard.
 
 ## Related
 
-- [Workspace Planning](../../planning/README.md) (if in submodule)
-- [ADR-0001: Planning Structure](../../planning/decisions/adr-0001-planning-structure.md)
+- [Workspace Planning](../../planning/README.md)
+- [ADR-0002: BMAD Polyrepo Planning And Repo-Root Authority](../../planning/decisions/adr-0002-bmad-polyrepo-planning.md)
